@@ -1,0 +1,143 @@
+.title {
+
+    height: 150px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tContainer {
+
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+
+.tContainer h1 {
+    margin-bottom: 20px;
+    color: #FF9C41;
+
+
+}
+
+.insBody {
+
+    height: fit-content;
+   
+
+    
+}
+
+.tabContainer {
+
+    height: fit-content;
+    padding: 15px 20px;
+    /* border: 1px solid red   ; */
+
+  
+}
+
+.row {
+
+    /* border: 1px solid red   ; */
+    
+
+}
+
+
+
+.row .col1 {
+
+    flex-basis: 30%;
+    height: 250px;
+    display: flex;
+    /* border: 1px solid red   ; */
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+.nav_item {
+
+    border: none;
+    margin-top: 20px;
+    background-color: #ebebeb;
+}
+
+.nav_item
+.nav_item {
+
+    /* margin-top: 30px; */
+    background-color: #ebebeb;
+}
+
+
+.nav_link {
+
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black !important;
+    font-weight: bold; 
+}
+
+.nav_link:nth-child(1) {
+
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black !important;
+    font-weight: bold; 
+
+    
+}
+
+
+
+/* .row .col1:nth-child(1) div:nth-child(1) .btn1:active{
+
+    background-color: #FF9C41;
+ 
+    
+} */
+
+.row .col1:nth-child(1) div:nth-child(2) .color-button.active{
+
+    background-color: #FF9C41;
+ 
+    
+}
+
+
+.row .col2 {
+
+    /* border: 1px solid green   ; */
+    flex-basis: 70%;
+   height: fit-content;
+
+}
+
+
+
+/* Info inscrption style */
+
+
+.info{
+
+    position: absolute;
+    bottom: 20px;
+    width: 500px !important;
+}
+
+/*  */
+

@@ -1,0 +1,379 @@
+:root {
+    --primary-color: #FF7A00;
+    --secondary-color: black;
+    --tertiary-color: white;
+}
+
+
+.btn_annonce {
+    transition: all 0.5s ease;
+    border-radius: 25px;
+    padding: 15px;
+    width: 300px;
+    border: none ;
+    color: white;
+}
+
+/*  all modals */
+
+.modalHeader {
+    border-bottom: 0 none !important    ;
+   
+}
+
+.modal-footer {
+    border-top: 0 none !important;
+}
+
+.modalDesciption {
+    padding-top: 40px;
+}
+
+
+.modalTittle {
+
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.fastClose {
+    
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    cursor: pointer;
+}
+
+.fastClose button {
+    
+    border: none;
+    background: transparent;
+    transition: all 0.5s ease;
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+
+
+.fastClose button:hover {
+    
+    background: #FF7A00;
+    opacity: 0.8;
+}
+
+.modalBody{
+
+    padding: 0 !important;
+}
+
+/* Modal 1 */
+
+.modal_1_Content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+
+}
+
+.modal_1_Content div:nth-child(1) {
+
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal_1_Content  p {
+
+   margin-top: 20px;
+   color: #FF7A00;
+   display: block;
+
+
+}
+
+.footer{
+
+    height: 70px;
+    margin-bottom: 50px;
+    width: 100% ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 20px;
+    background: #F4F4F4;
+
+}
+
+
+.footer button{
+
+    
+    width: fit-content;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: var(--tertiary-color);
+ 
+
+}
+
+/* Modal 2 */
+
+.modal_2_Content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+}
+
+
+.modal_2_Content  p {
+    
+    margin-top: 20px;
+    color: #FF7A00;
+    
+ }
+ 
+ /* Modal 3 styling */
+
+ .modal_3_Content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+    border: none !important;
+ }
+
+ .modal_3_Content .Container
+
+ {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+ }
+
+ .modal_3_Content .Container .Content
+
+ {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 20px ;
+
+ }
+
+ 
+ .modal_3_Content .Container .btnContainer
+
+ {
+    margin-top: 20px;
+ }
+
+ .modal_3_Content .Container .btnContainer button
+
+ {
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FF7A00;
+    border-color: #FF7A00;
+    background-color: transparent;
+ }
+
+ .modal_3_Content .Container Button:nth-child(2)
+
+ {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    color: #999999;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px 18px;
+    
+ }
+
+ /* Styling Modal 4 */
+
+
+ .modal_4_Content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+ }
+  
+ .modal_4_Content .Container
+
+ {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+
+ } 
+
+ .modal_4_Content .Container .Content
+
+ {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px ;
+
+ }
+
+
+ .modal_4_Content .Container button
+
+ {
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #FF7A00;
+    border-color: #FF7A00;
+    transition: all 0.3s ease;
+    background-color: transparent;
+ }
+
+ 
+ 
+
+ /* Modal 7 styling */
+
+ .modal_7_Content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+ }
+
+
+.modal_7_Content .Container {
+
+    width: 100%;
+    padding: 20px;
+}
+
+.modal_7_Content .Content {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.modal_7_Content .Content .autoComplete
+
+{
+    flex-basis: 45%;
+}
+
+/* Modal 8 styling */
+
+.modal_8_Content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% ;
+ }
+
+ .modal_8_Content .Container {
+
+    width: 100%;
+    padding: 20px;
+}
+
+.modal_8_Content .Content {
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modal_8_Content .Content .textFields
+
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal_8_Content .Content  .textFields .phoneForm
+
+{
+    margin: 12px 0px 0px 0px;
+
+}
+
+.phoneForm input {
+    height: 55px;
+    margin-right: 5px;
+    text-align: center;
+
+  }
+  
+
+.modal_8_Content .Content  p span
+
+{
+   color: #FF7A00;
+}
+
+.inputs{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.inputs div {
+
+    flex-basis: 45%;
+}
+
+.error {
+
+    color: red;
+    font-size: 12px;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    
+}

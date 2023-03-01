@@ -1,0 +1,19 @@
+.info_fournissieur{
+
+    color: #7B7B7B;
+}
+
+
+.info_fournissieur h3  {
+
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    color: #FF9C41;
+}
+
+p{
+
+    margin: 0 0 16px;
+    font-weight: 500;
+}

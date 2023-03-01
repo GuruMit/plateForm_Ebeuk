@@ -1,0 +1,26 @@
+.mainContainer {
+
+    border: 1px solid red;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Container {
+
+    border: 1px solid red;
+    width: 100%;
+}
+
+
+.mainContent {
+
+    border: 1px solid green;
+}
+
+.listItemContainer {
+
+    border: 1px solid blue;
+}

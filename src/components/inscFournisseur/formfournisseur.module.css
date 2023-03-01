@@ -1,0 +1,171 @@
+.name {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 16px;
+  }
+  
+  .name div:nth-child(1),
+  .name div:nth-child(2) {
+    width: 500px;
+  }
+  
+  .name div:nth-child(1) p,
+  .name div:nth-child(2) p,
+  .addresse div:nth-child(1) p {
+    margin-left: 10px;
+    width: fit-content;
+  }
+  
+  .addresse {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .addresse p {
+    padding-left: 12px;
+  }
+  
+  .addresse div:nth-child(1) {
+    width: 100%;
+  }
+  
+  .presContainer{
+    padding: 0px 12px;
+    margin-top: 20px;
+  }
+
+  .prestation{
+    padding-left: 8px;
+  }
+
+  .presContainer button:nth-child(1){
+    margin-right: 12px;
+  }
+
+
+  .over {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .villes {
+    padding: 0px 12px ;
+  
+  
+  }
+  
+  .villes div {
+    width: 500px;
+  
+  }
+  
+  .villes div:nth-child(2) {
+      width: 100%;
+    
+    }
+  
+  .villes div:nth-child(1) p,
+  .villes div:nth-child(2) p,
+  .addresse div:nth-child(1) p {
+    margin-left: 10px;
+    width: fit-content;
+  }
+  
+  .phone .phoneForm {
+    width: 100%;
+    padding-left: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -17px;
+  }
+  
+  .phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  
+  .phone p {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    margin-bottom: 30px;
+  }
+  
+  .phone input {
+    height: 55px;
+    margin-right: 5px;
+    text-align: center;
+  }
+  
+  .motdePasse {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 12px;
+    margin-top: 20px;
+
+  }
+  
+  .motdePasse p {
+    padding-left: 12px;
+  }
+  
+  .motdePasse div:nth-child(1) { 
+      
+    width: 100%;
+  }
+  
+  .pseudo, .email {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 12px;
+  }
+
+  .pseudo {
+
+    margin-top: 20px;
+  }
+  
+  .pseudo p, .email p {
+    padding-left: 12px;
+  }
+  
+  .pseudo div:nth-child(1) { 
+      
+    width: 100%;
+  }
+
+
+  .submit {
+    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+  }
+  .submit p {
+   
+      padding-left: 12px;
+  margin-top: 20px;
+      
+    
+    }
+  
+  .submit p span {
+    color: #ff9c41;
+  }
+  
+  .submit button {
+    background-color: #ff9c41;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+  }
+  

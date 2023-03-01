@@ -1,0 +1,97 @@
+.title {
+
+    height: 150px;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tContainer {
+
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+
+.tContainer h1 {
+    margin-bottom: 20px;
+    color: #FF9C41;
+}
+
+.insBody {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 500px;
+    
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .email div:nth-child(1) {
+    width: 500px;
+  }
+  
+  .email div:nth-child(1) p,
+  .email div:nth-child(2) p,
+  .addresse div:nth-child(1) p {
+    margin-left: 10px;
+    width: fit-content;
+  }
+
+  .motdePasse {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 12px;
+    
+    
+  }
+  
+  .motdePasse p {
+    padding-left: 12px;
+  }
+
+  .pcontent{
+
+    width: 500px !important;
+  }
+/* Butto connexion style */
+  .conex{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+    padding-right: 20px;
+    
+  }
+
+  .conex ul li{
+list-style: none;
+  }
+
+  
+  .conex ul li a{
+
+    text-decoration: none;
+    color: #FF9C41;
+
+}
+
+
+.conex button{
+
+    width: 150px;
+    height: 50px;
+
+    padding: 10px;
+  }
