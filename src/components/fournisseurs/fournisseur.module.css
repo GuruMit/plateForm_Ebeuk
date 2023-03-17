@@ -6,7 +6,6 @@
     line-height: 2;
     font-weight: 400;
     position: relative;
-    left: 65px;
 }
 
 .container {
@@ -31,8 +30,6 @@
     flex-direction: row ;
     flex-wrap: wrap;
     width:fit-content;
-    position: relative;
-    left: 70px;
     align-self: flex-start;
     padding: 0;
     margin: 0;    

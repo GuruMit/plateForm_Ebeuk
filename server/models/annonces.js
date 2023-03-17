@@ -56,6 +56,10 @@ const Annonce = sequelize.define('Annonces', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  date: {
+    type: DataTypes.DATE,
+    allowNull: false,
+  }
 
 });
 

@@ -6,12 +6,14 @@
 
 
 .btn_annonce {
-    transition: all 0.5s ease;
-    border-radius: 25px;
-    padding: 15px;
-    width: 300px;
-    border: none ;
-    color: white;
+    border: 3px solid #FF7A00;
+    height: fit-content;
+    padding: 15px 50px;
+    border-radius: 50px;
+    color: #FF7A00;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
 }
 
 /*  all modals */
@@ -134,7 +136,6 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100% ;
 }
@@ -196,7 +197,6 @@
     padding: 10px 18px;
     border-radius: 25px;
     font-size: 16px;
-    color: #FF7A00;
     border-color: #FF7A00;
     background-color: transparent;
  }
@@ -264,6 +264,7 @@
     border-color: #FF7A00;
     transition: all 0.3s ease;
     background-color: transparent;
+    
  }
 
  

@@ -18,7 +18,7 @@ const Ville = () => {
       <div className={css.container}>
 
       
-        <Container  style={{ background: "#fff"}} >
+        <Container fluid style={{ background: "#fff",marginTop:'50px',paddingLeft:"200px"}} >
         <h1>Prestataire Pres de Chez Vous</h1>
             <div className={css.content}>
             {villeData.map((ville, index) => (

@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const annonceRouter = router;
+const   annonceRouter = router;
 const Annonce = require("../models/annonces");
 
 // POST /api/client pour ajouter une annonce a la base de données
 annonceRouter.post("/", async (req, res) => {
-  const { prenom, nom, phone, prestation, description, detail , urgence ,budget , profile ,region , secteur } = req.body;
+  const { prenom, nom, phone, prestation, description, detail , urgence ,budget , profile ,region , secteur , date } = req.body;
 
   try {
        // Create Annonce
@@ -20,7 +20,8 @@ annonceRouter.post("/", async (req, res) => {
         budget: budget,
         profile: profile,
         region: region,
-        secteur:secteur
+        secteur:secteur,
+        date:date
       });
       console.log(`Nouvelle Annonce ajouter`);
      return res.status(201).json(annonce);

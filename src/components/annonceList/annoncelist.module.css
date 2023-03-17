@@ -1,0 +1,144 @@
+
+.Container {
+
+    /* border: 1px solid red; */
+    padding: 40px 200px;
+
+}
+
+.Content {
+
+    display: flex;
+    /* border: 1px solid red; */
+
+}
+
+
+
+
+/* Left List styling */
+.left {
+
+    /* border: 1px solid red; */
+    flex-basis: 50%;
+}
+
+.left .leftheader
+
+{
+    /* border: 1px solid green; */
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+
+}
+
+.new {
+
+    color: #666666;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.latest {
+
+    color: #666666;
+    font-size: 25px;
+}
+
+
+.new span:nth-child(1) {
+
+  border: 1px solid hsl(210, 70%, 56%);
+  padding: 15px;
+  font-size: 20px;
+
+  margin-right: 12px;
+  border-radius: 25px;
+  border-width: 1px;
+  font-weight: bold;
+  color: #4190DD;
+}
+
+
+
+.left .leftheader div:nth-child(2)
+
+{
+    border:none;
+    width: 250px;
+    text-align: center;
+    height: fit-content;
+    padding: 25px 50px;
+    border-radius: 50px;
+    background: #FF7A00;
+    color: white;
+
+
+}
+
+.offres {
+
+    /* border: 1px solid red; */
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+
+.normal {
+    color: #4190DD;
+    font-weight: bold;
+
+  }
+  
+  .urgent {
+    color: red;
+    font-weight: bold;
+  }
+
+  .recurrent {
+    color: black;
+    font-weight: bold;
+
+  }
+
+/*  */
+.desc {
+
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+
+/* Right List design */
+
+.right {
+
+    border: 1px solid blue;
+    flex-basis: 50%;
+}
+/*  */
+
+.all_annoncements {
+
+    text-align: center;
+    padding: 20px;
+
+}
+
+.all_annoncements button {
+
+    border: 1px solid #FF7A00;
+    height: fit-content;
+    padding: 15px 50px;
+    border-radius: 50px;
+    background: #EEEEEE;
+    color: #FF7A00;
+    font-size: 20px;
+    font-weight: bold;
+
+}

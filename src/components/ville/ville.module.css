@@ -5,8 +5,7 @@
     font-size: calc(1.325rem + .9vw);
     line-height: 2;
     font-weight: 400;
-    position: relative;
-    left: 65px;
+   
 }
 
 .container {
@@ -32,8 +31,6 @@
     display: flex ;
     flex-direction: row ;
     flex-wrap: wrap;
-    position: relative;
-    left: 70px;
     align-items: center;
     width:fit-content;
     padding: 0;

@@ -4,10 +4,10 @@ import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 //
-import { Modal, Form, Button } from "react-bootstrap";
+import { Modal, Form } from "react-bootstrap";
 //
 import { TextareaAutosize, TextField } from "@mui/material";
-
+import { Button, ConfigProvider } from "antd";
 import css from "./pmodal.module.css";
 
 //
@@ -56,8 +56,10 @@ const FormulaireAnnonce = () => {
   const [detail, setdetail] = useState("");
 
   const handleSubmit = async (values, { resetForm }) => {
+    // add current date and time to values object
+    values.date = new Date();
     axios
-      .post("/api", values)
+      .post("http://localhost:5000/api/annonces", values)
       .then(() => {
         resetForm();
       })
@@ -84,8 +86,9 @@ const FormulaireAnnonce = () => {
       nom: "",
       prenom: "",
       phone: "",
+      date: "",
     },
-    validationSchema: validationSchema,
+    // validationSchema: validationSchema,
     onSubmit: handleSubmit,
   });
 
@@ -128,21 +131,30 @@ const FormulaireAnnonce = () => {
   //
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Post Announcement
-      </Button>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: "#FF7A00",
+          },
+        }}
+      >
+        <Button className={css.btn_annonce} onClick={handleShow}>
+          Post Announcement
+        </Button>
+      </ConfigProvider>
 
       <Modal
-        size="lg"
+        size="xl"
         show={show}
         onHide={handleClose}
         keyboard={false}
         backdrop="static"
+        centered
       >
-        <Modal.Header closeButton>
-          // <Modal.Title>Announcement Form</Modal.Title>
-        </Modal.Header>
         <form onSubmit={formik.handleSubmit}>
+          <Modal.Header closeButton>
+            // <Modal.Title>Announcement Form</Modal.Title>
+          </Modal.Header>
           <Modal.Body>
             {step === 1 && (
               <div className={css.modal_1_Content}>
@@ -173,8 +185,8 @@ const FormulaireAnnonce = () => {
                                     Le nombre d'année d'experience doit etre de.....
                                     L'animateur doit avoir au moins .... nombre de followers sur les reseaux 
                                     "
-                    style={{ width: 750 }}
-                    minRows={7}
+                    style={{ width: "100%" }}
+                    minRows={12}
                     name="detail"
                   />
                   <p>
@@ -209,6 +221,9 @@ const FormulaireAnnonce = () => {
                                 selectedPrestation === pres.name
                                   ? "white"
                                   : "black",
+                              border: "1px solid #FF7A00",
+                              height: " fit-content",
+                              padding: "15px 40px",
                             }}
                           >
                             {pres.name}
@@ -248,6 +263,9 @@ const FormulaireAnnonce = () => {
                                 selectedBudget === budget.budget
                                   ? "white"
                                   : "black",
+                              border: "1px solid #FF7A00",
+                              height: " fit-content",
+                              padding: "15px 40px",
                             }}
                           >
                             {budget.budget}
@@ -284,6 +302,9 @@ const FormulaireAnnonce = () => {
                                 selectedUrgence === urgence.urg
                                   ? "white"
                                   : "black",
+                              border: "1px solid #FF7A00",
+                              height: " fit-content",
+                              padding: "15px 40px",
                             }}
                           >
                             {urgence.urg}
@@ -320,6 +341,9 @@ const FormulaireAnnonce = () => {
                                 selectedProfile === profile.profile
                                   ? "white"
                                   : "black",
+                              border: "1px solid #FF7A00",
+                              height: " fit-content",
+                              padding: "15px 30px",
                             }}
                           >
                             {profile.profile}
@@ -392,8 +416,11 @@ const FormulaireAnnonce = () => {
                                 formik.touched.region && formik.errors.region
                               }
                             />
-                             {formik.touched.region && formik.errors.region ? (
-                              <div style={{fontSize:'12px', float:"right"}} className="text-danger">
+                            {formik.touched.region && formik.errors.region ? (
+                              <div
+                                style={{ fontSize: "12px", float: "right" }}
+                                className="text-danger"
+                              >
                                 {formik.errors.region}
                               </div>
                             ) : null}
@@ -425,7 +452,10 @@ const FormulaireAnnonce = () => {
                               }
                             />
                             {formik.touched.secteur && formik.errors.secteur ? (
-                              <div style={{fontSize:'12px', float:"right"}} className="text-danger">
+                              <div
+                                style={{ fontSize: "12px", float: "right" }}
+                                className="text-danger"
+                              >
                                 {formik.errors.secteur}
                               </div>
                             ) : null}
@@ -444,15 +474,15 @@ const FormulaireAnnonce = () => {
                           className={css.phoneForm}
                           label="Phone Number"
                         />
-                         {formik.errors.phone && formik.touched.phone && (
-          <div className={css.error}>{formik.errors.phone}</div>
-        )}
+                        {formik.errors.phone && formik.touched.phone && (
+                          <div className={css.error}>{formik.errors.phone}</div>
+                        )}
                       </div>
 
-                      <p style={{marginTop:"20px"}}>
+                      <p style={{ marginTop: "20px" }}>
                         Le remplisage du Formulaire implique que vous avez lu et
                         accepter
-                        <span>  les termes et condition d'utilsation.</span>
+                        <span> les termes et condition d'utilsation.</span>
                       </p>
                     </div>
                   </div>
@@ -462,7 +492,15 @@ const FormulaireAnnonce = () => {
           </Modal.Body>
           <Modal.Footer className={css.footer}>
             {step > 1 && (
-              <Button variant="secondary" onClick={handlePrev}>
+              <Button
+                onClick={handlePrev}
+                style={{
+                  border: "1px solid #FF7A00",
+                  height: " fit-content",
+                  padding: "15px 40px",
+                  color:'#FF7A00',
+                }}
+              >
                 Previous
               </Button>
             )}
@@ -471,16 +509,27 @@ const FormulaireAnnonce = () => {
                 disabled={isButtonDisabled}
                 variant="primary"
                 onClick={handleNext}
+                style={{
+                  border: "1px solid #FF7A00",
+                  color:'#FF7A00',
+                  height: " fit-content",
+                  padding: "15px 40px",
+                }}
               >
                 Next
               </Button>
             )}
             {step === 7 && (
               <Button
-                variant="primary"
-                disabled={formik.isSubmitting}
-                onClick={formik.isSubmitting}
+                style={{
+                  border: "1px solid #FF7A00",
+                  color:'#FF7A00',
+                  height: " fit-content",
+                  padding: "15px 40px",
+                }}
                 type="submit"
+                // onClick={handleClose}
+                disabled={formik.isSubmitting}
               >
                 Submit
               </Button>
